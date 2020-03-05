@@ -31,7 +31,6 @@ const companyName = {
 
 const headerLinks = {
   textAlign: "center",
-  background: "white",
-  columnCount: 3
+  background: "white"
 };
 export default Header;
