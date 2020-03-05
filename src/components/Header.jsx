@@ -7,9 +7,11 @@ const Header = () => {
       {props => (
         <div style={props}>
           <div style={headerStyle}>
-            <h1>Em's</h1>
-            <Link to="/">Home</Link> | <Link to="/location">Location</Link> |
-            <Link to="/bio"> Bio</Link>
+            <h1 style={companyName}>Em's</h1>
+            <div style={headerLinks}>
+              <Link to="/">Home</Link> | <Link to="/location">Location</Link> |
+              <Link to="/bio"> Bio</Link>
+            </div>
           </div>
         </div>
       )}
@@ -23,4 +25,13 @@ const headerStyle = {
   padding: "1.5rem"
 };
 
+const companyName = {
+  textAlign: "center"
+};
+
+const headerLinks = {
+  textAlign: "center",
+  background: "white",
+  columnCount: 3
+};
 export default Header;
